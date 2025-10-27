@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Http\Controllers\TelegramController;
 use Illuminate\Console\Command;
 
 class WorkerEveryMinute extends Command
@@ -13,7 +14,7 @@ class WorkerEveryMinute extends Command
 
     public function handle(): void
     {
-        // Your logic here
-        \Log::info('WorkerEveryMinute executed at ------------- ' . now());
+        $controller = new TelegramController();
+        $controller->sendMessage();
     }
 }
