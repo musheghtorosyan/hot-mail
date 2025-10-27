@@ -14,6 +14,6 @@ class WorkerEveryMinute extends Command
     public function handle(): void
     {
         // Your logic here
-        \Log::info('WorkerEveryMinute executed at ' . now());
+        \Log::info('WorkerEveryMinute executed at ------------- ' . now());
     }
 }
