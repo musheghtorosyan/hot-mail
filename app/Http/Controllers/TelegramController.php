@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Http;
 
 class TelegramController extends Controller
 {
-    public function sendMessage($text = 'Hello from Laravel!')
+    public function sendMessage($text = 'Իիիիինչչչ կա Վահրամ՞')
     {
         $token = config('services.telegram.bot_token');
         $chatId = config('services.telegram.chat_id');
