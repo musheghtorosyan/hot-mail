@@ -2,7 +2,8 @@
 
 namespace App\Console\Commands;
 
-use App\Http\Controllers\TelegramController;
+
+use App\Http\Controllers\WarmupController;
 use Illuminate\Console\Command;
 
 class WorkerEveryMinute extends Command
@@ -14,7 +15,9 @@ class WorkerEveryMinute extends Command
 
     public function handle(): void
     {
-        $controller = new TelegramController();
-        $controller->sendMessage();
+
+
+        $controller = new WarmupController();
+        $controller->warmup();
     }
 }
