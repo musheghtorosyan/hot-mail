@@ -46,7 +46,7 @@ class WarmupController extends Controller
         // Config: allowed sending time (24h format)
         $timeConfig = [
             'start' => '09:00',
-            'end' => '20:00',
+            'end' => '19:45',
         ];
 
         // Get current time
