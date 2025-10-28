@@ -7,7 +7,14 @@ use Illuminate\Http\Request;
 class WarmupController extends Controller
 {
     public function warmup(){
-        $controller = new TelegramController();
+
+        $text = now()->toDateTimeString().'---';
+
+
+
+
+
+        $controller = new TelegramController($text);
         $controller->sendMessage();
     }
 }
