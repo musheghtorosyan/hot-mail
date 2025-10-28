@@ -7,8 +7,9 @@ use Illuminate\Support\Facades\Http;
 
 class TelegramController extends Controller
 {
-    public function sendMessage($text = 'Իիիիինչչչ կա Վահրամ՞')
+    public function sendMessage($text = 'test')
     {
+        $text = date(('Y-m-d H:i:s');
         $token = config('services.telegram.bot_token');
         $chatId = config('services.telegram.chat_id');
 
